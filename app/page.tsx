@@ -1,34 +1,18 @@
-import Image from "next/image";
-import { NavBar } from "./components/NavBar"
 import { HeroSection } from "./components/HeroSection";
-
-const links = [
-  {
-    title: "Birthday Song",
-    href: "https://www.youtube.com/watch?v=3_QLj6S7cdQ&list=RD3_QLj6S7cdQ&start_radio=1",
-  },
-  {
-    title: "Om Meg",
-    href: "",
-  },
-  {
-    title: "Prosjekter",
-    href: "",
-  },
-  {
-    title: "Kontakt Meg",
-    href: "",
-  },
-]
 
 export default function Home() {
   return (
     <div className="">
-      <NavBar 
-        links={links}
-      />
-      <HeroSection />
-      <div className="justify-items-center place-content-center">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-60 p-16">
+        <HeroSection />
+        <div className="flex flex-col gap-10">
+          <h1 className="text-6xl font-bold text-[#e1bb80]">Software Developer</h1>
+          <p className="text-2xl font-bold text-[#e1bb80]">
+            Masters student at NTNU 
+            <br></br>
+            Always up for a new challenge and opportunity!
+          </p>
+        </div>
       </div>
     </div>
   );
