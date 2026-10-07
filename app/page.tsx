@@ -50,8 +50,8 @@ export default function Home() {
                 ))}
           </div>
           <div className="flex gap-12 items-center justify-center">
-            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2" id="downloadNorsk" value="download" onClick={() => downloadCV("/Pragathi_Gopal_CV.pdf")}>CV_Norsk</button>
-            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2"id="downloadEngelsk" value="download" onClick={() => downloadCV("/Pragathi_Gopal_CV_eng.pdf")}>CV_Eng</button>
+            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2" id="downloadNorsk" value="download" onClick={() => downloadCV(`${process.env.NEXT_PUBLIC_BASE_PATH}/Pragathi_Gopal_CV.pdf`)}>CV_Norsk</button>
+            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2"id="downloadEngelsk" value="download" onClick={() => downloadCV(`${process.env.NEXT_PUBLIC_BASE_PATH}/Pragathi_Gopal_CV_eng.pdf`)}>CV_Eng</button>
           </div>
         </div>
       </div>
