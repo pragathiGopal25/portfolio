@@ -31,7 +31,7 @@ function Timeline(
                             key={index}
                             date={experience.date}
                             dateClassName="!text-2xl !font-bold !text-white"
-                            contentStyle={{ background: "white", color:"black",}}
+                            contentStyle={{ background: "#FFFBEB", color:"black",}}
                             contentArrowStyle={{ borderRight: "7px solid white"}}
                             iconStyle={{ background: "#352208", color: '#3498db', border: '2px solid white', padding: "16px", marginRight:"4px"}}
                         >
