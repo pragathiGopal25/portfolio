@@ -5,15 +5,17 @@ const techStack = ["Java", "Python", "Kotlin", "PostgreSQL", "C", "React", "Type
 
 export default function Home() {
 
-  const downloadCV = (
-    filename: string 
-  ) => {
+  const downloadCV = (filename: string) => {
     const element = document.createElement("a");
-    element.href = filename;
+  
+    element.href = `/portfolio/${filename}`;
+    element.download = filename;
+  
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-  }
+  };
+
   return (
     <div className="min-h-screen">
       <div className="flex min-h-screen flex-col md:flex-row items-center justify-center gap-10 px-8 pb-30 md:gap-10">
@@ -50,8 +52,8 @@ export default function Home() {
                 ))}
           </div>
           <div className="flex gap-12 items-center justify-center">
-            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2" id="downloadNorsk" value="download" onClick={() => downloadCV(`${process.env.NEXT_PUBLIC_BASE_PATH}/Pragathi_Gopal_CV.pdf`)}>CV_Norsk</button>
-            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2"id="downloadEngelsk" value="download" onClick={() => downloadCV(`${process.env.NEXT_PUBLIC_BASE_PATH}/Pragathi_Gopal_CV_eng.pdf`)}>CV_Eng</button>
+            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2" id="downloadNorsk" value="download" onClick={() => downloadCV("Pragathi_Gopal_CV.pdf")}>CV_Norsk</button>
+            <button className="border rounded-2xl bg-amber-200 w-full pl-12 pr-12 pt-2 pb-2"id="downloadEngelsk" value="download" onClick={() => downloadCV("Pragathi_Gopal_CV_eng.pdf")}>CV_Eng</button>
           </div>
         </div>
       </div>
