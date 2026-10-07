@@ -23,7 +23,7 @@ export const NavBar = (
                 return (
                     <Link 
                         key={link.title} 
-                        className={`hover:font-bold hover:scale-110 ${isActive ? "font-bold" : ""}`}
+                        className={`hover:font-bold hover:scale-110 ${isActive ? "font-bold scale-110" : ""}`}
                         href={link.href}>
                     {link.title}
                     </Link>);

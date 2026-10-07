@@ -24,7 +24,6 @@ export const Card = (
                 height={500}
                 alt={""}      
             />
-            {/* <Link className="p-4 text-1.5xl mt-auto mx-auto underline underline-offset-1 text-[#352208] hover:font-bold" href={link}>{title}</Link> */}
         </div>
     );
 }
