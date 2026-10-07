@@ -1,6 +1,6 @@
 import { HeroSection } from "./components/HeroSection";
 
-const techStack = ["Java", "Python", "Kotlin", "PostgreSQL", "C", "React", "TrypeScript"]
+const techStack = ["Java", "Python", "Kotlin", "PostgreSQL", "C", "React", "TypeScript"]
 
 export default function Home() {
   return (

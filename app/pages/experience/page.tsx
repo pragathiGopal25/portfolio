@@ -54,7 +54,6 @@ export default function Experience() {
           <Timeline
             experiences={timelineItems}
           />
-
         </div>
       </div>
     );
